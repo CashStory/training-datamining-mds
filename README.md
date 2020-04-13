@@ -1,6 +1,6 @@
-
-
 <img src="https://cashstory.com/_nuxt/img/8259e1b.png" alt="drawing" width="250" align='left'/>
+
+
 
 
 
@@ -8,15 +8,88 @@
 
 <br> 
 
-# Data mining training 
-
-### Introduction générale - My Digital School Rennes
 
 
+# Introduction générale au Data Mining
+
+#  - My Digital School Rennes, Avril 2020
 
 
 
-## Définition 
+[TOC]
+
+
+
+# Projet de cours
+
+Date de dernière mise à jour : 14/04/2020
+
+## Agenda
+
+**15 Avril 2020**
+
+9H - 12H30 - Introduction générale
+
+- Le Data mining pour tous
+- Présentation des outils & workflow de travail
+
+14H - 17H  
+
+- Création de groupes de travail 
+- Premier push a 16H30 sur le répertoire https://github.com/CashStory/training-datamining-mds
+
+**20 Avril 2020** 
+
+9H - 12H30 
+
+- Les techniques de data mining / collection 
+
+- présentation du projet opensource [worldsituationroom.com](http://worldsituationroom.com/) mené par CashStory
+
+14H - 17H  
+
+- Mini projet en peer programming (à 2) : collecter et traiter la données sur les organismes internationaux sur les sujet : démographiques, environnementaux à l'échelle mondiale
+
+**22 Avril 2020**  
+
+9H - 12H30 
+
+- Mini projet en peer programming (à 2) : collecter et traiter la données sur les organismes internationaux sur les sujet : démographiques, environnementaux à l'échelle mondiale.
+
+14H - 17H
+
+- Mini projet : collecter et traiter la données sur les organismes internationaux sur les sujet : démographiques, environnementaux à l'échelle mondiale.
+
+**24 Avril 2020** 
+
+9H - 12H30 
+
+- Documenter son code: un outil de communication et de promotion de son travail
+- Revue de travaux du mini projet  
+
+14H - 17H 
+
+- Votes sur les meilleurs scripts (par tous)
+
+- Intégration des scripts selectionnés dans le répertoire opensource du projet http://worldsituationroom.com/
+
+
+
+## Outils
+
+- Campus online : https://mycampus.eduservices.org/
+- [Teams](https://teams.microsoft.com/_?tenantId=8a2f18a9-8f0e-4f76-a585-9b07b3a38dea#/conversations/General?threadId=19:fc785aec069e459c9b34d3b4206114b5@thread.tacv2&ctx=channel) 
+- Emails : 
+- [Microsoft Azure Notebook](https://datamining-jeremyravenelext.notebooks.azure.com/j/notebooks/Example-1.ipynb) 
+- [Google colab console](https://colab.research.google.com/) 
+
+
+
+# Le data mining pour tous
+
+
+
+## Définition
 
 Le Data Mining c’est l’ensemble des algorithmes, méthodes et technologies inspirés de plusieurs autres disciplines, propres ou non au DM pouvant servir à **remplacer ou à aider l’expert humain** ou le décideur dans un domaine spécifique dans le cadre de prise de décision, et ce en **fouillant dans des bases** de données décisionnelles des corrélations, des associations, des comportements homogènes, des formules de lien entre  indicateurs, des spécification par rapport à une **thématique bien déterminée.**
 
@@ -183,13 +256,33 @@ Prise de Décision, Prédiction, Exploitation de données, etc.
 
 
 
-2 familles de techniques : 
+**2 familles de techniques :** 
 
 - Méthodes Non Supervisées
   - Analyse en Composantes  Principales ACP
-  - Méthodes des Centres  Mobiles K-means
+    - Apprentissage Automatique
+    - Méthode descriptive
+    - Données purement quantitatives
+    - Obtention de Corrélations
+    - Relations :
+      - (Ii, Ij),
+      - (Ii, Xk),
+      - (Xk,Xp)
+  - Méthodes de Segmentation  (Classification Automatique)
+    - Apprentissage Automatique
+    - Méthode descriptive
+    - Obtention d’une nouvelle affection/appartenance
+    - Groupes d’individus possédant des caractéristiques semblables : meilleure
+      classification
+    - Mise à jour de l’entrepôt en Input : ajouter la nouvelle caractéristique des  individus
   - Classification Ascendante  Hiérarchique CAH
   - Règles  Associatives  Apriori
+    - Apprentissage Automatique
+    - Méthode descriptive
+    - Données Transactionnelles
+    - Obtention d’un ensemble de règles expliquant l’associativité/correspondance
+      entre les items/produits/profils
+    - Trier les règles selon des indicateurs de performances
 - Méthodes Supervisées
   - Arbres de Décisions
   - Analyse Linéaire Discriminante
@@ -197,30 +290,369 @@ Prise de Décision, Prédiction, Exploitation de données, etc.
   - Plus Proche voisin kNN
   - Réseaux de Neurones
   - Séparateur à Vaste Marge  SVM
-- 
+
+
+
+## Methodologies de travail
+
+### KDD / EDC 
+
+(Knowledge Data Discovery / Extraction de connaissances à partir de données)
+
+#### Définition : Knowledge Discovery in Databases
+
+- proposé par Ossama Fayyad en 1996
+- un processus pour la fouille de données qui a bien répondu aux besoins d’entreprises, et qui est devenu rapidement très populaire.
+- KDD a comme but l’extraction des connaissances,
+- des motifs valides, utiles et exploitables à partir des grandes quantités de données
+- par des méthodes automatiques ou semi-automatiques.
+- Le processus de KDD est itératif et interactif.
+- Le processus est itératif : il peut être nécessaire de refaire les pas précédents.
+- Le problème de ce processus, comme pour les autres  présentés dans la section suivante, est le manque de guidage  de l’utilisateur, qui ne choisit pas à chaque étape la meilleure  solution adaptée pour ses données.
+
+
+
+#### Phases principales
+
+1. Développer **et** **comprendre** **le** **domaine de** **l’application**
+
+   - C’est le pas initial de ce processus. Il prépare la scène pour comprendre et développer les buts de l’application.
+
+2. Sélection des données
+
+   - La sélection et la création d’un ensemble de données sur lequel va être appliqué le processus d’exploration.=> "**Données** **ciblées**"
+
+3. Le prétraitement et le nettoyage des données
+
+   - Cette étape inclut des opérations comme l’enlèvement du  bruit et des valeurs aberrantes -si nécessaire, des décisions sur  les stratégies qui vont être utilisées pour traiter les valeurs  manquantes... => "**Données prétraitées**"
+
+4. La transformation des données
+
+   - Cette étape est très importante pour la réussite du projet et  doit être adaptée en fonction de chaque base de données et  des objectifs du projet.
+     Dans cette étape nous cherchons les méthodes correctes pour  représenter les données. Ces méthodes incluent la réduction  des dimensions et la transformation des attributs.=> "**Données** **transformées**"
+     - Note : une fois que toutes ces étapes seront terminées, les  étapes suivantes seront liées à la partie de Data mining, avec  une orientation sur l’aspect algorithmique.
+
+5. Choisir la meilleure tâche pour Datamining
+
+   - Nous devons choisir quel type de Datamining sera utilisé, en  décidant le but du modèle.
+     - Par exemple : classification, régression, regroupement...
+
+6. Choisir l’algorithme de Datamining
+
+   - Dans cette étape nous devons choisir la méthode spécifique  pour faire la recherche des motifs, en décidant quels modèles et  paramétrés sont appropriés.=> **"Création de modèles"**
+
+7. Implémenter l’algorithme de Datamining
+
+   - Dans cette étape nous implémentons les algorithmes de Datamining choisis dans l’étape antérieure. 
+   - Peut être il sera nécessaire d’appliquer l’algorithme plusieurs fois pour avoir le résultat attendu.
+
+8. Evaluation
+
+   - Evaluation et interprétation des motifs découverts. Cette étape donne la possibilité de:
+     - Retourner à une des étapes précédentes
+     - Avoir une représentation visuelle des motifs, enlever les  motifs redondants ou non-représentatifs et les  transformer dans des termes compréhensibles pour  l’utilisateur.
+
+9. Utiliser les connaissances découvertes
+
+   - Incorporation de ces connaissances dans des autres systèmes
+     pour d’autres actions.
+   - Nous devons aussi mesurer l’effet de ces connaissances sur le  système, vérifier et résoudre les conflits possibles avec les  connaissances antérieures.
+
+   
 
 
 
 
-## **Pro**gramme 
 
-Dans cette formation nous allons: 
 
-- Apprendre les bases théoriques du Data Mining 
-- Developper ensemble des cas d'usages simples sur le modèle CRISP (ju
-- Appliquer le data mining en en mode collaboratif via : 
-  - https://github.com/
-  - https://colab.research.google.com/
+![](https://www.researchgate.net/profile/Jian_Yuan2/publication/271967382/figure/fig17/AS:667930488471554@1536258446254/An-overview-of-the-KDD-process.png)
 
 
 
-## Ressources : 
+Le KDD est devenu lui-même un modèle pour les nouveaux modèles.
 
-- Data mining in Bio 
+Le modèle a été utilisé dans plusieurs domaines  différentes : ingénierie, médicine, e-business,  production, développement du logiciel, etc.
+
+
+
+### SEMMA : Sample, Explore, Modify, Model, Assess
+
+
+
+#### Mise en contexte 
+
+L’Institut SAS définit le data mining comme le processus utilisé pour révéler  des informations précieuses et des relations complexes qui existent dans de  grandes quantités de données (BIG DATA, OPEN DATA).
+
+SAS divise la fouille de données en cinq étapes représentées par l’acronyme **SEMMA**.
+
+
+
+#### Définition
+
+
+
+<img src="https://github.com/CashStory/training-datamining-mds/blob/master/semma.PNG?raw=true" alt="drawing" width="700" align='left'/>
+
+
+
+#### Phases principales
+
+**1-** **Sample:** **Echantillon** **des** **données**
+
+Extrait des échantillons d’un vaste ensemble de données, en nombre suffisamment grand pour contenir l’information importante.
+
+**2 -** **Explore:** **Exploitation** **des** **données**
+
+Cette étape consiste dans l’exploration des données en recherchant les tendances et les anomalies imprévues afin de mieux comprendre les données.
+
+**3 -** **Modify:** **Modifier** **les** **données**
+
+Dans cette étape on modifie les données en créant, en sélectionnant et en transformant les variables afin de s’axer sur le processus de sélection de modèles.
+
+**4 -** **Model:** **Modélisation** **des** **données**
+
+- Modélisation des données en permettant au logiciel de rechercher automatiquement une combinaison des données qui prédit de façon fiable le résultat souhaité.
+
+- Il y a plusieurs techniques de modélisation: les réseaux de neurones, arbres de décision, modèles statistiques - l’analyse en composantes principales, l’analyse de séries temporelles...
+
+**5 -** **Assess:** **Evaluer** **le** **résultat**
+
+- Cette étape consiste à l’évaluation de l’utilité et la fiabilité des résultats du processus de DataMining et estime comment il va s’exécuter.
+
+- En évaluant les résultats obtenus à chaque étape du processus de SEMMA, nous pouvons déterminer la façon de modéliser les nouveaux problèmes déterminés par les résultats
+
+  précédents, et donc de refaire la phase d’exploration supplémentaire pour le raffinement des données.
+
+
+
+#### L'Application SAS 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/SAS_logo_horiz.svg/1200px-SAS_logo_horiz.svg.png" alt="drawing" width="150" align='left'/>
+
+- SAS est définie par SEMMA comme l’organisation logique d’outil SAS Entreprise Miner pour la réalisation des tâches de DataMining.
+
+- Enterprise Miner peut être utilisé comme une partie de n’importe quelle méthodologie itérative de DataMining adoptée par le client.
+
+- Une des différences entre KDD et SEMMA est que SEMMA est intégré dans l’outil Enterprise Miner et ils n’utilisent pas d’autres méthodologies, tandis que le KDD est un processus ouvert qui peut être appliqué dans plusieurs environnements.
+
+
+
+
+
+### CRISP  - DM
+
+#### Définition
+
+**Cross-Industry** **Standard** **Process** **for** **Data** **Mining**
+
+Une méthode mise à l'épreuve sur le terrain permettant d'orienter les travaux de Data mining
+
+
+
+Processus de data mining qui décrit une approche communément utilisée par les experts pour résoudre les problèmes qui se posent à eux.
+
+
+
+<img src="https://github.com/CashStory/training-datamining-mds/blob/master/CRISP.PNG?raw=true" alt="drawing" width="700" align='left'/>
+
+**Méthodologie** 
+
+- comprend des  descriptions des  phases typiques d'un  projet et des tâches  comprises dans  chaque phase, et une  explication des  relations entre ces  tâches.
+
+
+
+
+
+<img src="https://www.solutions-numeriques.com/wp-content/uploads/2017/12/mthode-crisp.png" alt="drawing" width="500" align='left'/>
+
+
+
+
+
+#### Phases principales
+
+**1- Compréhension métier** 
+
+- Déterminer les objectifs business 
+- Résoudre un problème spécifique 
+- Evaluer la situation actuelle
+- Convertir en un problème de data mining
+  - Quels types de clients sont intéressés par chacun de nos  produits?
+  - Quels sont les profils typiques de nos clients?
+- Élaborer un plan de projet
+
+**2 - Compréhension des données** 
+
+- Collecte de données initiale
+- Description des données
+- Exploration des données
+- Vérification de la qualité des données
+- Sélection des données
+- Les données connexes peuvent provenir de nombreuses sources :
+  - Interne (ERP, CRM, Data Warehouse…)
+  - Externe (données commerciales, données du gouvernement…)
+  - Créées (recherche)
+
+
+
+<u>**Les enjeux de la selection des données**</u> 
+
+- Mettre en place une description concise et claire du problème
+- Identifier les comportements de dépenses des femmes qui achètent
+  des vêtements saisonniers
+- Identifier les modèles de la faillite de détenteurs de cartes de crédit
+- Identifier les données pertinentes pour la description du problème
+- Données démographiques, données financières…
+- Les variables sélectionnées pour les données pertinentes doivent être
+  indépendantes les unes des autres.
+
+
+
+**3 - Préparation des données** 
+
+- Nettoyer les données sélectionnées pour une meilleure qualité 
+
+  - Remplissez les valeurs manquantes
+  - Identifier ou supprimer les valeurs aberrantes
+  - Résoudre la redondance causée par l'intégration des données
+  - Les données incohérentes correctes
+
+- Transformer les données
+
+  - Convertir des mesures différentes de données dans un échelle
+    numérique unifié en utilisant des formulations mathématiques simples
+
+    
+
+<u>**Les enjeux de la transformation des données**</u> 
+
+- Transformez le numérique à des échelles numériques
+  - Les échelles salariales de « 100 TND » à « 1000 TND » à un  certain nombre de [0.0, 1.0]
+  - Le système métrique (par exemple, le mètre, kilomètre) au système anglais (par exemple, des pieds et miles)
+- Recoder les données catégoriques à des échelles  numériques
+  - "1" = "oui" et "0"	= "No"
+- Gestion des dates 
+- Nommage des labels à analyser
+
+
+
+**4 - Modélisation** 
+
+- Traitement des données
+
+  - Ensemble d'apprentissage
+  - Ensemble de test…
+
+- Les techniques de data mining
+
+  - Association
+  - Classification
+  - Clustering
+  - Prédictions
+  - Les motifs séquentiels
+
+  
+
+**5 - Evaluation** 
+
+- Est-ce que le modèle répond aux objectifs métier?
+- Des objectifs métier importants non résolus?  Est-ce que le modèle est logique?
+- Est-ce que le modèle est actionnable?
+- Il devrait être possible de prendre des décisions après cette  étape.
+- Tous les objectifs importants doivent être atteints.
+
+
+
+**6 - Déploiement et implémentation ** 
+
+- En cours de suivi et d'entretien
+  - Évaluer la performance par rapport aux critères de réussite
+  - La réaction du marché et les changements des concurrents
+
+
+
+
+
+
+
+
+
+### ⚠️ Les données dans le monde réél !
+
+- **Incomplètes**: manque de valeurs d'attributs, manque de certains attributs  d'intérêt ou ne contenant que des agrégats des attributs d’intérêt ou  contenant uniquement des données agrégées
+
+  - l'occupation = ""
+
+- **Bruyantes**: contenant des erreurs ou des valeurs aberrantes
+
+  - Salaire = "- 1000"
+
+- **Incompatibles**: contenant des écarts dans les codes ou les noms
+
+  - Age = "42" et anniversaire = "03/07/1993"
+
+  - note =« 1,2,3 » ensuite «A, B, C »
+
+    
+
+**Les principales causes** 
+
+Les données incomplètes peuvent provenir de:
+
+- La valeur de données lors de la collecte «Sans objet»
+- Des considérations différentes entre le moment où les données ont  été collectées et lorsqu‘elles sont analysées.
+- Problèmes humains / matériels / logiciels
+
+Les données bruyantes (valeurs incorrectes) peuvent provenir de:
+
+- Les instruments de collecte de données sont erronés
+- L'erreur humaine ou informatique à la saisie de données
+- Les erreurs de transmission de données
+
+Les données incohérentes peuvent provenir de:
+
+- Différentes sources de données
+- La violation de la dépendance fonctionnelle (par exemple, de modifier  certaines données liées)
+
+
+
+
+
+
+
+
+
+
+
+
+
+​	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Credits
+
+- Mohamed Heny Selmi, Le data mining ou "la fouille de données"
+- Why using CRISP-DM will make you a better Data Scientist
+  - https://towardsdatascience.com/why-using-crisp-dm-will-make-you-a-better-data-scientist-66efe5b72686
+- Data mining Bioinfo
   - https://www-lmgm.biotoul.fr/enseignements/M2Pro_Bioinfo/intro.pdf
 - DIKW, la pyramide qui inspire le futur des moteurs de recherche
   - https://www.scriptol.fr/web/dikw.php
-
-- Why using CRISP-DM will make you a better Data Scientist
-  - https://towardsdatascience.com/why-using-crisp-dm-will-make-you-a-better-data-scientist-66efe5b72686
 
