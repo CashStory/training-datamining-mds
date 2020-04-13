@@ -1,6 +1,5 @@
 <img src="https://cashstory.com/_nuxt/img/8259e1b.png" alt="drawing" width="250" align='left'/>
-<br>
-<br>
+
 
 
 # Data mining training 
@@ -33,10 +32,79 @@ Le Data Mining c’est l’ensemble des algorithmes, méthodes et technologies i
 
 ## Les applications du data mining
 
-![image-20200413201101381](https://lh3.googleusercontent.com/2ZJoDC7711B6AcHFTBfghFNj3b2bx9JHO0qPOHpWzXnzZ7yOc_wSRl_iR8k1CkVz4rhsww=s118)
 
 
-## Programme 
+
+
+<img src="https://github.com/CashStory/training-datamining-mds/blob/master/datamining-applications.PNG?raw=true" alt="drawing" width="1250" align='left'/>
+
+
+
+- **<u>Analyse de données</u>** : Résumer et visualiser l’activité de l’entreprise à travers
+
+  des **indicateurs** **pertinents**
+
+- **<u>Segmentation</u>** : 
+
+  - Aucune variable décisionnelle, information **quantitative**
+    - Les variables d’entrées servent à créer des groupes homogènes
+    - Les individus de chaque groupe se ressemblent le plus
+    - Les groupes d’appartenances obtenus se distinguent le plus
+  - Trouver les variables métiers influençant la répartition en groupes
+  - Affecter les individus à leurs nouveaux groupes d’appartenance 
+  - Plusieurs méthodes et techniques pour segmenter :
+    - Partionnement : k-means
+    - Hiérarchique : CAH
+  - Trouver les **comportements** **typiques** des clients.
+
+- **<u>Associativité</u>** : 
+
+  - Analyse du chariot : recherche des articles les plus/moins associés
+  - Médecine : les symptomes associés 
+
+- **<u>Classification</u>** **:** 
+
+  - La variable décisionnelle est **qualitative**
+    - Un dossier de crédit peut être classifié : BON ou MAUVAIS
+    - Un patient peut présenter un fort risque de maladie cardiaque
+    - Un client peut présenter un comportement atypique
+  - La Classification a pour objectifs :
+    - Détecter les variables possédant un lien fort avec la variable décisionnelle
+    - Construire un modèle de classification liant ces variables à la décision
+  - Plusieurs méthodes et techniques pour classifier :
+    - Arbre de décision
+    - Forêts Aléatoires
+    - K-NN *k*-nearest neighbors
+    - Séparateur à vaste Marge SVM
+    - Régression Logistique
+
+- <u>**Scoring**</u> :
+
+  - Evaluation de campagne terrain : déterminer **l'efficacité** **de** **la** **communication** avec les clients.
+  - Marketing ciblé : optimiser les chances d'obtenir des réponses (positives) de la part des clients à une offre particulière par un ciblage plus précis, mettant en évidence les clients avec une forte probabilité de réponse.
+  - Data mining & CRM : le datamining a beaucoup d'applications qui peuvent apporter un soutien considérable au marketing et à la gestion de la relation client (*faire* *correspondre* *des* *profils* *des* *clients* *avec des* offres produits *afin* *d’augmenter* *le* *taux* *de* *conversion* *:* *cross* *selling*)
+
+- **<u>Régression Linéaire</u>** :
+
+  - La variable décisionnelle est **quantitative**
+    - Prédire les tendances salariales la prochaine année
+    - Prédire le meilleur pourcentage de réduction de coûts
+    - Construire un modèle générique pour l’estimation de la consommation de carburant
+  - La régression a pour objectifs :
+    - Détecter les variables possédant un lien fort avec la variable cible
+    - Construire un modèle prédictif avec l’ensemble des variables pertinentes afin de prédire la variable d’intérêt
+    - Détecter les individus atypiques ou les aberrances
+  - Régression Linéaire
+    - Méthode des moindres carrés
+    - Meilleurs prédicteurs
+  - Applications :
+    - Pricing : Déterminer le **prix** **"optimal"**convenable pour un produit.
+    - Analyse Coûts-bénéfices : Identifier les produits et les campagnes les **plus** **rentables**
+
+
+
+
+## **Pro**gramme 
 
 Dans cette formation nous allons: 
 
