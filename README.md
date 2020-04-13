@@ -16,7 +16,39 @@
 
 
 
-[TOC]
+- [Introduction générale au Data Mining](#introduction-g-n-rale-au-data-mining)
+- [- My Digital School Rennes, Avril 2020](#--my-digital-school-rennes--avril-2020)
+- [Projet de cours](#projet-de-cours)
+  * [Agenda](#agenda)
+  * [Outils](#outils)
+- [Le data mining pour tous](#le-data-mining-pour-tous)
+  * [Définition](#d-finition)
+  * [Enjeux](#enjeux)
+  * [La pyramide DIKW](#la-pyramide-dikw)
+  * [Les applications du data mining](#les-applications-du-data-mining)
+  * [Data mining & finance](#data-mining---finance)
+    + [Banques & finances](#banques---finances)
+    + [Vente,  Distribution,  Marketing](#vente---distribution---marketing)
+    + [Assurances](#assurances)
+  * [Les méthodes de data mining](#les-m-thodes-de-data-mining)
+    + [Deux familles de techniques](#deux-familles-de-techniques)
+    + [Types d'applications](#types-d-applications)
+  * [Methodologies de travail](#methodologies-de-travail)
+    + [KDD / EDC](#kdd---edc)
+      - [Définition : Knowledge Discovery in Databases](#d-finition---knowledge-discovery-in-databases)
+      - [Phases principales](#phases-principales)
+    + [SEMMA : Sample, Explore, Modify, Model, Assess](#semma---sample--explore--modify--model--assess)
+      - [Mise en contexte](#mise-en-contexte)
+      - [Définition](#d-finition-1)
+      - [Phases principales](#phases-principales-1)
+      - [L'Application SAS](#l-application-sas)
+    + [CRISP  - DM](#crisp----dm)
+      - [Définition](#d-finition-2)
+      - [Phases principales](#phases-principales-2)
+    + [⚠️ Les données dans le monde réél !](#---les-donn-es-dans-le-monde-r--l--)
+  * [Credits](#credits)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 
