@@ -1,10 +1,16 @@
+
+
 <img src="https://cashstory.com/_nuxt/img/8259e1b.png" alt="drawing" width="250" align='left'/>
 
 
 
+<br>
+
+<br> 
+
 # Data mining training 
 
-### My Digital School Rennes
+### Introduction générale - My Digital School Rennes
 
 
 
@@ -104,6 +110,98 @@ Le Data Mining c’est l’ensemble des algorithmes, méthodes et technologies i
 
 
 
+
+## Data mining & finance
+
+
+
+### Banques & finances
+
+- **Gestion** **de** **risque** **-** évaluer un risque de défaut. Au delà des techniques classiques de scoring, d'autre techniques de modélisation issues de l'intelligence artificielle permettent d'augmenter la maitrise de ces risques.
+- **Crédit** **scoring** **-** évaluer le risque de non remboursement (technique data mining la plus déployée)
+- **Détection** **de** **fraudes** **-** identifier plus facilement et plus rapidement les éventuelles transactions frauduleuses
+- **Segmentation** **-** améliorer la connaissance de vos clients par la découverte de groupes homogènes et par une caractérisation selon leur profil 
+- **Prédiction** **-** prévoir quels clients seront intéressés par une offre
+
+
+
+### Vente,  Distribution,  Marketing
+
+- Détection d'associations de comportements d'achat
+- Découverte de caractéristiques de clientèle.
+- Prédiction de probabilité de réponse aux campagnes de mailing.
+
+
+
+### Assurances 
+
+- Découverte d'associations des demandes de remboursements
+- Identification de clients potentiels de nouvelles polices d'assurances.
+- Détection d'association de comportements pour la découverte de clients à risque.
+- Détection de comportement frauduleux.
+- Prendre un client à un concurrent.
+- Faire monter en gamme un client que l’on détient déjà.
+
+
+
+Prise de Décision, Prédiction, Exploitation de données, etc.
+
+
+
+## Les méthodes de data mining 
+
+
+
+### Deux familles de techniques
+
+**1- Apprentissage automatique** (Analyse descriptive)
+
+- S’appliquent seulement sur les données quantitatives.
+- Fournissent directement des résultats : à interpréter et à utiliser !
+- Visent à mettre en évidence des connaissances **présentes** mais cachées par le volume des données
+- Réduisent, résument, synthétisent les masses de données
+- **pas de variable « cible** **»**
+
+
+
+**2- Apprentissage supervisées** (Analyse prédictive)
+
+- Fournissent un modèle (et non pas  des résultats), créé à partir d’un entrepôt d’apprentissage, testé et  validé sur un entrepôt de test, et  utilisé dans les problèmes de prise de décision sur des entrepôts de travail 
+- visent à découvrir de nouvelles  informations à partir des  informations présentes :  connaissances, décisions 
+- expliquent mieux les données
+- Une(des) variable(s) « cible(s)»
+
+
+
+### Types d'applications
+
+
+
+<img src="https://github.com/CashStory/training-datamining-mds/blob/master/types-dapplications.PNG?raw=true" alt="drawing" width="1250" align='left'/>
+
+
+
+
+
+2 familles de techniques : 
+
+- Méthodes Non Supervisées
+  - Analyse en Composantes  Principales ACP
+  - Méthodes des Centres  Mobiles K-means
+  - Classification Ascendante  Hiérarchique CAH
+  - Règles  Associatives  Apriori
+- Méthodes Supervisées
+  - Arbres de Décisions
+  - Analyse Linéaire Discriminante
+  - Régression
+  - Plus Proche voisin kNN
+  - Réseaux de Neurones
+  - Séparateur à Vaste Marge  SVM
+- 
+
+
+
+
 ## **Pro**gramme 
 
 Dans cette formation nous allons: 
@@ -122,5 +220,7 @@ Dans cette formation nous allons:
   - https://www-lmgm.biotoul.fr/enseignements/M2Pro_Bioinfo/intro.pdf
 - DIKW, la pyramide qui inspire le futur des moteurs de recherche
   - https://www.scriptol.fr/web/dikw.php
-- 
+
+- Why using CRISP-DM will make you a better Data Scientist
+  - https://towardsdatascience.com/why-using-crisp-dm-will-make-you-a-better-data-scientist-66efe5b72686
 
