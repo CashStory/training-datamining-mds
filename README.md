@@ -15,9 +15,6 @@
 #  - My Digital School Rennes, Avril 2020
 
 
-
-- [Introduction générale au Data Mining](#introduction-g-n-rale-au-data-mining)
-- [- My Digital School Rennes, Avril 2020](#--my-digital-school-rennes--avril-2020)
 - [Projet de cours](#projet-de-cours)
   * [Agenda](#agenda)
   * [Outils](#outils)
