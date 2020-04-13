@@ -1,6 +1,9 @@
+<img src="https://cashstory.com/_nuxt/img/8259e1b.png" alt="drawing" width="200" align='left'/>
+<br>
+
 ## Data mining training
 
-By CashStory
+
 
 
 
