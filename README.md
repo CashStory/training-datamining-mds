@@ -12,6 +12,6 @@ Dans cette formation nous allons:
 
 - Apprendre les bases théoriques du Data Mining 
 - Trouver ensemble des cas d'usages 
-- Appliquer le data mining en mode collaboratif via : 
+- Appliquer le data mining en en mode collaboratif via : 
   - https://github.com/
   - https://colab.research.google.com/
