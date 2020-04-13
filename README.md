@@ -33,7 +33,7 @@ Le Data Mining c’est l’ensemble des algorithmes, méthodes et technologies i
 
 ## Les applications du data mining
 
-![image-20200413201101381](C:\Users\raven\AppData\Roaming\Typora\typora-user-images\image-20200413201101381.png)
+![image-20200413201101381](https://drive.google.com/file/d/1WbaAAiQTpRIeMWE-RJYSIGgAgd1bn0tR/view?usp=sharing)
 
 
 ## Programme 
