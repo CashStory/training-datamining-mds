@@ -1,4 +1,8 @@
+
+
 <img src="https://cashstory.com/_nuxt/img/8259e1b.png" alt="drawing" width="250" align='left'/>
+
+
 
 
 
@@ -13,6 +17,8 @@
 # Introduction générale au Data Mining
 
  My Digital School Rennes, Avril 2020
+
+<img src="https://file.diplomeo-static.com/file/00/00/01/23/12398.svg" alt="drawing" width="200" align='center'/>
 
 
 
