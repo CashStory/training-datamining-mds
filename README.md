@@ -12,40 +12,11 @@
 
 # Introduction générale au Data Mining
 
-#  - My Digital School Rennes, Avril 2020
+ My Digital School Rennes, Avril 2020
 
 
-- [Projet de cours](#projet-de-cours)
-  * [Agenda](#agenda)
-  * [Outils](#outils)
-- [Le data mining pour tous](#le-data-mining-pour-tous)
-  * [Définition](#d-finition)
-  * [Enjeux](#enjeux)
-  * [La pyramide DIKW](#la-pyramide-dikw)
-  * [Les applications du data mining](#les-applications-du-data-mining)
-  * [Data mining & finance](#data-mining---finance)
-    + [Banques & finances](#banques---finances)
-    + [Vente,  Distribution,  Marketing](#vente---distribution---marketing)
-    + [Assurances](#assurances)
-  * [Les méthodes de data mining](#les-m-thodes-de-data-mining)
-    + [Deux familles de techniques](#deux-familles-de-techniques)
-    + [Types d'applications](#types-d-applications)
-  * [Methodologies de travail](#methodologies-de-travail)
-    + [KDD / EDC](#kdd---edc)
-      - [Définition : Knowledge Discovery in Databases](#d-finition---knowledge-discovery-in-databases)
-      - [Phases principales](#phases-principales)
-    + [SEMMA : Sample, Explore, Modify, Model, Assess](#semma---sample--explore--modify--model--assess)
-      - [Mise en contexte](#mise-en-contexte)
-      - [Définition](#d-finition-1)
-      - [Phases principales](#phases-principales-1)
-      - [L'Application SAS](#l-application-sas)
-    + [CRISP  - DM](#crisp----dm)
-      - [Définition](#d-finition-2)
-      - [Phases principales](#phases-principales-2)
-    + [⚠️ Les données dans le monde réél !](#---les-donn-es-dans-le-monde-r--l--)
-  * [Credits](#credits)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+[TOC]
 
 
 
@@ -600,6 +571,26 @@ Processus de data mining qui décrit une approche communément utilisée par les
 
 
 
+#### Exemple CRISP: les factures de téléphone
+
+Séquence de période de facturation:
+
+- Utilisez 2 mois, recevoir la facture, le paiement du mois de facturation,  débrancher si la facture n'est pas réglée pendant une période  déterminée
+
+| Phases                                    | Description                                                  |
+| ----------------------------------------- | ------------------------------------------------------------ |
+| 1/<br />COMPRÉHENSION MÉTIER              | Prédire quels clients seraient insolvables à temps pour l'entreprise pour prendre des mesures préventives  (et d'éviter de perdre de bons clients)<br><u>Hypothèse</u>:<br/>Clients insolvables vont changer les habitudes d'appel et l'usage  du téléphone pendant une période critique avant et  immédiatement après la fin de la période de facturation. |
+| 2/<br />COMPRÉHENSION DES DONNÉES         | Les informations statiques des clients sont disponibles dans des fichiers (Factures, paiements, utilisation…)<br/>Un entrepôt de données est utilisé pour recueillir et organiser les données<br/>(Un codage pour protéger la vie privée des clients) |
+| CRÉATION DE L'ENSEMBLE DES DONNÉES CIBLES | - Les fichiers des client (Informations sur les clients, Déconnexion, Reconnexions) <br />- Données dépendantes du temps (Factures, paiements, Utilisation)<br/>100, 000 clients sur une période de 17 mois<br/>L'échantillonnage pour assurer à tous les groupes une  représentation appropriée |
+| 3/<br />PRÉPARATION DES DONNÉES           | Filtrer les données incomplètes<br/>Les appels en promotion supprimés<br/>- Le volume des données réduit d'environ 50%<br/>Faible nombre des cas de fraude<br/>Vérification croisée avec les déconnexions du téléphone  Les données retardées sont nécessairement synchronisées |
+| 4/ <br />MODÉLISATION                     | Analyse discriminante: modèle linéaire<br/>Les arbres de décision: Classificateur à base de règles<br/>Réseaux de Neurones : Le modèle non linéaire |
+| 5/<br />EVALUATION                        | Le premier objectif est de maximiser la précision de la prédiction des<br/>clients insolvables<br/>- Arbre de décision un classificateur meilleur<br/>Deuxième objectif est de minimiser le taux d'erreur pour les clients<br/>de solvants<br/>- Le modèle Réseau de Neurones proche de l’arbre de décision<br/>Utilisé tous les 3 sur la base de cas par cas. |
+| 6/<br />IMPLÉMENTATION                    | Chaque client a été examiné avec les 3 algorithmes<br/>- Si tous les 3 sont convenables, utiliser une classification<br/>- En cas de désaccord, catégorisé comme non classé<br/>Correcte sur les données d'essai avec 0.898<br/>- Seulement 1 client solvant aurait été débranché |
+
+ 
+
+
+
 
 
 
@@ -665,23 +656,21 @@ Les données incohérentes peuvent provenir de:
 
 
 
-
-
-
-
-
-
-
-
-
-
 ## Credits
 
-- Mohamed Heny Selmi, Le data mining ou "la fouille de données"
-- Why using CRISP-DM will make you a better Data Scientist
-  - https://towardsdatascience.com/why-using-crisp-dm-will-make-you-a-better-data-scientist-66efe5b72686
-- Data mining Bioinfo
-  - https://www-lmgm.biotoul.fr/enseignements/M2Pro_Bioinfo/intro.pdf
+- Mohamed Heny Selmi, Le data mining ou "la fouille de données" (ESPRIT)
+
 - DIKW, la pyramide qui inspire le futur des moteurs de recherche
+
   - https://www.scriptol.fr/web/dikw.php
+
+- Why using CRISP-DM will make you a better Data Scientist
+
+  - https://towardsdatascience.com/why-using-crisp-dm-will-make-you-a-better-data-scientist-66efe5b72686
+
+- Data mining Bioinfo
+
+  - https://www-lmgm.biotoul.fr/enseignements/M2Pro_Bioinfo/intro.pdf
+
+  
 
