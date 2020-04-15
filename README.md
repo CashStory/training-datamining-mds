@@ -132,7 +132,7 @@ Le Data Mining c’est l’ensemble des algorithmes, méthodes et technologies i
 
 ## Enjeux
 
-- Simplifier la production de données ou  informations structurées et porteuses de sens
+- Simplifier la production de données en  informations structurées et porteuses de sens
 - Créer du sens et des connaissances à partir de données non enrichies et non structurées
 - Analyser des tendances sur la durée
 - Permettre la création de modèles sur des historiques de données
