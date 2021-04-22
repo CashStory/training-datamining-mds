@@ -1,6 +1,6 @@
 # Introduction générale au Data Mining
 
- My Digital School Rennes, Avril 2020
+ My Digital School Rennes
 
 <img src="https://file.diplomeo-static.com/file/00/00/01/23/12398.svg" alt="drawing" width="200" align='center'/>
 
@@ -47,7 +47,7 @@ Date de dernière mise à jour : 14/04/2020
 
 ## Agenda
 
-**15 Avril 2020**
+**Journée 1**
 
 9H - 12H30 - Introduction générale
 
@@ -59,7 +59,7 @@ Date de dernière mise à jour : 14/04/2020
 - Création de groupes de travail 
 - Premier push a 16H30 sur le répertoire https://github.com/CashStory/training-datamining-mds
 
-**20 Avril 2020** 
+**Journée 2**
 
 9H - 12H30 
 
@@ -71,7 +71,7 @@ Date de dernière mise à jour : 14/04/2020
 
 - Mini projet en peer programming (à 2) : collecter et traiter la données sur les organismes internationaux sur les sujet : démographiques, environnementaux à l'échelle mondiale
 
-**22 Avril 2020**  
+**Journée 3**
 
 9H - 12H30 
 
@@ -81,7 +81,7 @@ Date de dernière mise à jour : 14/04/2020
 
 - Mini projet : collecter et traiter la données sur les organismes internationaux sur les sujet : démographiques, environnementaux à l'échelle mondiale.
 
-**24 Avril 2020** 
+**Journée 4**
 
 9H - 12H30 
 
@@ -101,7 +101,7 @@ Date de dernière mise à jour : 14/04/2020
 - Campus online : https://mycampus.eduservices.org/
 - [Teams](https://teams.microsoft.com/_?tenantId=8a2f18a9-8f0e-4f76-a585-9b07b3a38dea#/conversations/General?threadId=19:fc785aec069e459c9b34d3b4206114b5@thread.tacv2&ctx=channel) 
 - Emails : 
-- [Microsoft Azure Notebook](https://datamining-jeremyravenelext.notebooks.azure.com/j/notebooks/Example-1.ipynb) 
+- [Naas](https://www.naas.ai/) 
 - [Google colab console](https://colab.research.google.com/) 
 
 
